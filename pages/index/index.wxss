@@ -1,0 +1,80 @@
+
+
+
+.poem{
+  margin: 7rpx;
+  font-size: 37rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5rpx;
+  border-color: aquamarine;
+  border-style: double;
+  background-color: rgb(179, 225, 14);
+  
+
+}
+
+.t1{
+  text-align: center;
+  margin-left: 16rpx;
+  font-size: 32rpx;
+}
+
+.t2{
+  font-size: 25rpx;
+  letter-spacing: 10rpx;
+  color: azure;
+
+}
+
+.main_content{
+  margin: 5rpx;
+  display: flex;
+  flex-direction: row;
+  /* height: 700rpx; */
+  height: 100%;
+  background-color: rgb(196, 9, 81);
+  flex-wrap: wrap;
+  padding: 15rpx;
+  border-radius: 12rpx;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav{
+
+  margin-top: 15rpx;
+  display: flex;
+  width: 45%;
+  height: 180rpx;
+  background-color: #3ff;
+  border-radius: 15rpx;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50rpx;
+  font-weight: bold;
+  font-variant-position: normal;
+}
+
+
+.long_nav{
+
+  margin-top: 15rpx;
+  display: flex;
+  width: 95%;
+  height: 180rpx;
+  background-color: #3ff;
+  border-radius: 15rpx;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 50rpx;
+  font-weight: bold;
+  font-variant-position: normal;  
+}
+
+#his{
+  margin-bottom: 20rpx;
+}

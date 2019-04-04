@@ -1,0 +1,13 @@
+<view class="wrp">
+    <view class="title"><text >快递查询</text></view>
+    <view input_wrp>
+        <input class="input" placeholder="请输入快递单号" bindblur="get_input"/>
+    </view>
+    <view class="detail_wrp" wx:for="{{detail}}" wx:key="{{index}}">
+        <view class="detail"><text >
+            {{item.context}}
+            {{item.time}}
+            {{item.location}}
+        </text></view>
+    </view>
+</view>

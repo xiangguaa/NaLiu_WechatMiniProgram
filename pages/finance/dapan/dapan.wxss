@@ -1,0 +1,35 @@
+.wrp{
+    background-color:#3ff;
+    border-radius: 15rpx;
+
+}
+
+.title{
+    margin-top: 10rpx;
+    margin: 5rpx;
+    height: 70rpx;
+    border-radius: 15rpx;
+    background-color: rgb(54, 161, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50rpx;
+    letter-spacing: 10rpx;
+}
+
+.detail_wrp{
+    height: 1234rpx;
+    background-color: rgb(119, 31, 31);
+    border-radius: 10rpx;
+    margin: 5rpx;
+    overflow: scroll;
+    
+}
+
+.detail{
+    background-color: rgb(13, 100, 42);
+    border-radius: 15rpx;
+    margin: 10rpx;
+    padding: 10rpx;
+
+}

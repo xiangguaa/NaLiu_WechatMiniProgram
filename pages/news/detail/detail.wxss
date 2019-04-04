@@ -1,0 +1,8 @@
+.title{
+    height: 150rpx;
+    background-color: #45f;
+    font-size: 50rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

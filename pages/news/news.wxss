@@ -1,0 +1,24 @@
+.wrp{
+    margin: 20rpx;
+    border-radius: 15rpx;
+    background-color: #3ff;
+    height: 110rpx;
+    display: flex;
+    align-items: center;
+    font-size: 40rpx;
+
+}
+
+
+
+
+.title{
+    margin: 20rpx;
+    border-radius: 15rpx;
+    background-color: #3ff;
+    height: 110rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40rpx;
+}

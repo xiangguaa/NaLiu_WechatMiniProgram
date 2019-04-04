@@ -1,0 +1,30 @@
+
+
+  <navigator class="poem" url="../poem/poem?title={{onePoem.data.origin.title}}&author={{onePoem.data.origin.author}}&content={{onePoem.data.origin.content}}">
+    <text class="t1">{{onePoem.data.content}}</text>
+    <text class="t2" color='red'>原文</text>
+  </navigator>
+
+
+
+  <view class="main_content">
+    
+    <!-- <view class="weather"> -->
+      <navigator id='wea' url="../weather/weather"class="nav">天气</navigator>
+      <!-- </view> -->
+      <navigator id='tsl' url="../translate/translate"class="nav">翻译</navigator>
+    <!-- </view> -->
+      <navigator id='trn' url="../transport/transport"class="nav">交通</navigator>
+    <!-- </view> -->
+      <navigator id='cal' url="../finance/finance"class="nav">金融</navigator>
+    
+    <!-- </view> -->
+      <navigator id='tsl' url="../news/news"class="nav">热闻</navigator>
+    <!-- </view> -->
+      <navigator id='tsl' url="../delivery/delivery"class="nav">快递</navigator>
+    <!-- </view> -->
+      <navigator id='rec' url="../recipe/recipe" class="long_nav">今日食谱</navigator>
+    <!-- </view> -->
+      <navigator id='his' url="../history/history" class="long_nav">历史上的今天</navigator>
+    
+  </view>

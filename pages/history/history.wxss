@@ -1,0 +1,15 @@
+
+.date{
+    font-size: 50rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.detail{
+    padding: 7rpx;
+    margin: 10rpx;
+    background-color: #159;
+    border-radius: 15rpx;
+}
+
+

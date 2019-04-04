@@ -1,0 +1,14 @@
+<view class="wrp">
+    <view class="title">常用汇率</view>
+    <view class="detail_wrp">
+        <view class="detail" wx:for="{{exchange.list}}" wx:key="{{index}}">
+            <text >货币名称：{{item[0]}}
+                交易单位：{{item[1]}}
+                现汇买入价：{{item[2]}}
+                现钞买入价：{{item[3]}}
+                现钞卖出价：{{item[4]}}
+                中行折算价：{{item[5]}}
+            </text>
+        </view>
+    </view>
+</view>

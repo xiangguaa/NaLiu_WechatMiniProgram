@@ -1,0 +1,33 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50rpx;
+    background-color: #734;
+    border-radius: 15rpx;
+    margin: 10rpx;
+}
+.input_wrp{
+    margin: 10rpx;
+    background-color: rgb(74, 174, 105);
+    border-radius: 10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    margin: 10rpx;
+    background-color: rgb(74, 174, 105);
+    border-radius: 10rpx;
+
+}
+
+.detail{
+    height: 50rpx;
+    margin: 10rpx;
+    background-color: rgb(223, 113, 203);
+    border-radius: 15rpx;
+}
+
+

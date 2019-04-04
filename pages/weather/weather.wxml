@@ -1,0 +1,26 @@
+<view class="main">
+    <!-- head -->
+    <view class="head">
+        <!-- titile -->
+        <text class="title">天气预测</text>
+        <!-- city -->
+        <view class="city">
+            {{city}}
+        </view>
+    </view>
+
+    <!-- suggest -->
+    <view class="suggest">
+        <text >天气渐冷，请多加衣。</text>
+    </view>
+
+
+    <view class="detail" wx:for="{{weather_realtime}}" wx:key="index">
+        <view class="unit">
+            <view class="text_wrp"><text class="wea_text">{{item.date}}{{item.direct}}{{item.temperature}}{{item.weather}}</text></view>
+            <image class="wea_pic" src="../../icons/weather_icons/{{item.wea_copy[0]}}.png" />
+        </view>
+    </view>
+
+
+</view>

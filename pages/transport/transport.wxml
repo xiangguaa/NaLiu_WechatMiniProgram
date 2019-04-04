@@ -1,0 +1,49 @@
+<view class="city_trn">
+    <view class="wrp">
+        <!-- 标题 -->
+        <view class="title">公交线路查询·{{city}}</view>
+        <!-- 输入框 -->
+        <view class="bus_input">
+            <input id="bus" bindconfirm="get_businput" placeholder="输入查询线路"  />
+        </view>
+        <!-- 返回结果框 -->
+         <view class="detail01">
+             
+              <text class="txt" wx:for="{{trn}}" wx:key="index">{{item.station}}-></text>
+              <text wx:if="{{trn.length!==0}}">结束</text>
+         </view>
+        
+    </view>
+
+    <view class="wrp">
+        <!-- 标题 -->
+        <view class="title">乘车线路查询</view>
+        <!-- 输入框 -->
+        <view class="outer_wrp">
+            <view class="plc_wrp">
+                <input class="asd"  bindblur="get_start" placeholder="起始地"  />
+            </view>  
+            <view class="plc_wrp">  
+                <input class="asd" bindblur="get_destination" placeholder="目的地"  />
+            </view>    
+            <view class="confirm" bindtap="get_route" >确认</view>
+        </view> 
+        
+        
+        <!-- 返回结果框 -->
+        <view class="detail02">
+            <view  wx:for="{{route[0].steps}}" wx:key="index">
+                <text id="rou_detail">{{item[0].instructions}}--></text>
+                
+            </view>
+            <text wx:if="{{route.length!=0}}">结束</text>
+            
+        </view>
+        
+    </view>
+
+
+
+
+
+</view>

@@ -1,0 +1,48 @@
+<view class="wrp">
+    <view class="title">股票行情</view>
+    
+    <view class="input_wrp">
+        <input class="input"  value="{{input_value}}" placeholder="请输入要查询的股票代码："  bindconfirm="getCode"/>
+        <view class="pic_wrp" bindtap="getClear" ><image class="pic" src="../../../icons/weather_icons/b.png" /></view>
+    </view>
+    <view class="detail_wrp">
+        <!-- <view wx:for="{{fund_ramdom}}">{{index}}???????????/</view> -->
+        <view class="detail" wx:for="{{fund_random_new}}" wx:key="{{index}}" wx:if="{{showorhide}}" >
+            <text >股票代码：{{item.code}}
+                股票名称：{{item.name}}
+                成交额：{{item.amount}}
+                涨跌幅：{{item.changepercent}}
+                最高价：{{item.high}}
+                最低价：{{item.low}}
+                总市值：{{item.mktcap}}
+                流通市值：{{item.nmc}}   
+                开盘价：{{item.open}}
+                市净率：{{item.pb}}
+                昨日收盘价：{{item.settlement}}
+                现价：{{item.trade}}
+                换手率：{{item.turnoverratio}}
+                成交量：{{item.volume}}
+            </text>
+        </view>
+        <view class="search_detail" wx:if="{{!(showorhide)}}">
+            <text >股票代码：{{fund_search.code}}
+                股票名称：{{fund_search.name}}
+                成交额：{{fund_search.amount}}
+                涨跌幅：{{fund_search.changepercent}}
+                最高价：{{fund_search.high}}
+                最低价：{{fund_search.low}}
+                总市值：{{fund_search.mktcap}}
+                流通市值：{{fund_search.nmc}}   
+                开盘价：{{fund_search.open}}
+                市净率：{{fund_search.pb}}
+                昨日收盘价：{{fund_search.settlement}}
+                现价：{{fund_search.trade}}
+                换手率：{{fund_search.turnoverratio}}
+                成交量：{{fund_search.volume}}
+            </text>           
+        </view>
+    </view>
+</view>
+
+
+

@@ -1,0 +1,63 @@
+
+
+
+.pad{
+    height: 450rpx;
+    background-color: rgb(139, 161, 160);
+    border-radius: 15rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    padding: 30rpx;
+    display: flex;
+
+}
+
+
+.button_wrp{
+    height: 70rpx;
+    background-color: rgb(104, 50, 101);
+    align-items: center;
+    justify-content: center;
+    margin-left: 150rpx;
+    margin-right: 150rpx;
+    position: relative;
+    bottom: 32rpx;
+    border-radius: 15rpx;
+    z-index: 100;
+    display: flex;
+
+}
+
+.button_wrp image{
+    width: 70rpx;
+    height: 60rpx;
+
+}
+
+#down{
+    margin-top: 10rpx;
+    position: relative;
+    bottom: 70rpx;
+    margin-top: 10rpx;
+    padding: 24rpx;
+}
+
+
+
+
+#top{
+    margin-top: 20rpx;
+}
+
+.title{
+    height: 90rpx;
+    margin: 15rpx;
+    background-color: #229999;
+    border-radius: 15rpx;
+    position: relative;
+    bottom: 70rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 14rpx;
+}

@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/recipe/recipe",
+    
+    "pages/history/history",
+    "pages/finance/dapan/dapan",
+    
+    
+    "pages/delivery/delivery",
+    "pages/poem/poem",
+    "pages/news/news" ,
+    "pages/finance/stock/stock",
+   
+    "pages/finance/fund/fund",
+    
+    
+    "pages/finance/exchange/exchange",
+    "pages/finance/finance",
+    
+
+    
+
+    "pages/weather/weather",
+   
+    
+    
+   
+    "pages/translate/translate",
+    "pages/transport/transport"   
+
+  ],
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3ff",
+    "navigationBarTitleText": "Old Helper",
+    "navigationBarTextStyle":"black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

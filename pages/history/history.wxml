@@ -1,0 +1,14 @@
+<view class="main">
+    <view class="date"><text >{{year}}年{{month}}月{{day}}日</text></view>
+
+    <view class="wrp" wx:for="{{detail}}" wx:key="{{index}}">
+        <view class="unit">
+            <!-- <image src="{{item.img}}"/> -->
+            <view class="detail">
+                <text class="detial_date">{{item.date}}</text>
+                <text class="title">{{item.title}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+

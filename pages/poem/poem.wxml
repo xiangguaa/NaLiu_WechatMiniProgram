@@ -1,0 +1,5 @@
+<view class="wrp">
+    <view class="title"><text >{{p_title}}</text></view>
+    <view class="author"><text >{{p_author}}</text></view>
+    <view class="content"><text class="content_text">{{p_content_real}}</text></view>
+</view>

@@ -1,0 +1,75 @@
+.wrp{
+    margin-top: 7rpx;   
+    background-color:#3ff;
+    border-radius: 15rpx;
+
+}
+
+.title{
+    margin-top: 10rpx;
+    margin: 5rpx;
+    height: 70rpx;
+    border-radius: 15rpx;
+    background-color: rgb(54, 161, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50rpx;
+    letter-spacing: 10rpx;
+}
+
+.check_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input{
+    margin-top: 10rpx;
+    display: flex;
+    align-items: center;
+    background-color: rgb(134, 138, 98);
+    height: 70rpx;
+    border-radius: 5rpx;
+    border-width: 7rpx;
+    text-indent: 15rpx;
+    color: black;
+}
+.input-placeholder{
+    color: #3ff;
+}
+
+.detail_outer_wrp{
+    background-color: rgb(148, 25, 25);
+    border-radius: 40rpx;
+    margin: 10rpx;
+    overflow: scroll;
+}
+
+.detail_wrp{
+    background-color: rgb(47, 9, 198);
+    border-radius: 10rpx;
+    margin: 5rpx;
+    overflow: scroll;
+    
+}
+
+.detail_wrp text{
+    margin: 6rpx;  
+}
+
+
+
+.kline_title{
+
+    font-size: 50rpx;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+

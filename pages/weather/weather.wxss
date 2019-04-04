@@ -1,0 +1,75 @@
+.head{
+    width: 99%;
+    height: 80rpx;
+    background-color: #2ec3e7;
+    border-radius: 10rpx;
+    text-align: center;
+    margin-top: 5rpx;
+    margin-left: 4rpx;
+    margin-right: 4rpx; 
+
+}
+.title{
+    font-size: 50rpx;
+    font-style: italic;
+    letter-spacing: 50rpx;
+    position: relative;
+    right: 150rpx;
+}
+
+.city{
+    position: absolute;
+    top:15rpx;
+    left: 550rpx;
+    border-radius: 15rpx;
+    width: 25%;
+    height: 60rpx;
+    background-color: #634;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 5rpx;
+}
+
+
+.suggest{
+    font-size: 35rpx;
+    text-indent: 50rpx;
+    background-color: #f5f5dc;
+    padding: 10rpx;
+    border-radius: 20rpx;
+    margin-top: 6rpx;
+    /* text-align: center; */
+    /* margin-left: 50rpx; */
+}
+
+
+
+
+.unit{
+    height: 200rpx;
+    background-color: #6ff;
+    margin: 10rpx;
+    border-radius: 15rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 18rpx;
+}
+
+.text_wrp{
+    width: 60%;
+}
+.wea_text{
+    font-size: 35rpx;
+}
+
+
+
+
+.wea_pic{
+    margin-right: 15rpx;
+    width: 170rpx;
+    height: 170rpx;
+
+}

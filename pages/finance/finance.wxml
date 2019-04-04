@@ -1,0 +1,8 @@
+<view class="main">
+    <navigator class="nav" url="dapan/dapan">大盘指数</navigator>
+    <navigator class="nav" url="exchange/exchange">汇率数据</navigator>
+    <navigator class="nav" url="stock/stock">股票数据</navigator>
+    <navigator class="nav" url="fund/fund">股票行情</navigator>
+
+    
+</view>

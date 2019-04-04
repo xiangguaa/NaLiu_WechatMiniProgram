@@ -1,0 +1,63 @@
+.title{
+    font-size: 50rpx;
+}
+
+.input_wrp{
+    background-color: rgb(133, 167, 123);
+    border-radius: 5rpx;
+}
+
+
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(120, 172, 172);
+    border-radius: 10rpx;
+    margin: 20rpx;
+}
+.unit_name{
+    background-color: rgb(110, 32, 32);
+    font-size: 40rpx;
+}
+
+
+
+.arrow{
+    width: 50rpx;
+    height: 50rpx;
+} 
+
+
+.detail{
+    background-color: rgb(115, 27, 27);
+    width: 100%;
+    border-radius: 15rpx;
+
+}
+
+.content{
+    font-size: 30rpx;
+    font-style: italic;
+}
+.material{
+    font-size: 25rpx;
+}
+.progress{
+    background-color: rgb(43, 6, 123);
+    width: 100%;
+    margin-top: 15rpx;
+    padding: 10rpx;
+    border-radius: 10rpx;
+}
+
+.progress_text{
+    width: 750rpx;
+    margin: 10rpx;
+}
+.progress_img{
+    margin: 5rpx;
+    width: 100%;
+
+}

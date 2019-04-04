@@ -1,0 +1,47 @@
+.title{
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+    background-color: rgb(233, 245, 10);
+    border-radius: 15rpx;
+    font-size: 42rpx;
+    letter-spacing: 15rpx;
+    font-weight: 700;
+}
+
+.author{
+    margin-top: 24rpx;
+    background-color: rgb(230, 20, 20);
+    width: 200rpx;
+    position: relative;
+    left: 500rpx;
+    border-radius: 5rpx;
+    font-size: 35rpx;
+    letter-spacing: 8rpx;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.content{
+    padding-top: 50rpx;
+    padding-left: 15rpx;
+    display: flex;
+    justify-content: center;
+    border-radius: 20rpx;
+    overflow: scroll;
+    font-size: 36rpx;
+    letter-spacing: 10rpx;
+    font-weight: bold;
+    margin-bottom: 40rpx;
+    letter-spacing: 3rpx;
+}
+
+
+/* .content_text{
+    line-height: 20rpx;
+} */

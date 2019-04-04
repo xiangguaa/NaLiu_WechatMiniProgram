@@ -1,0 +1,160 @@
+<view class="wrp">
+    <view class="title">股票查询</view>
+    <view class="input_wrp">
+        <view class="checklist">
+            <radio-group bindchange="choseStock">
+                <label wx:for="{{items}}" wx:key="index">
+                    <radio class="radio" value="{{item.value}}" /> {{item.name}}
+                </label>
+            </radio-group>
+        </view>
+        <view class="input"><input placeholder="股票代码" bindconfirm="getStockcode"/></view>
+    </view>
+	<!-- detail -->
+	
+		<view class="detail_wrp" wx:if="{{check=='hk'&&stock.data.maxpri!=null}}">
+			<text >股票编号：{{stock.data.gid}}		
+			股票英文简称：{{stock.data.ename}}		
+			股票名称：{{stock.data.name}}		
+			今日开盘价：{{stock.data.openpri}}		
+			前收盘价：{{stock.data.formpri}}
+			最高价：{{stock.data.maxpri}}	
+			最低价：{{stock.data.minpri}}	
+			最新价：{{stock.data.lastestpri}}	
+			涨跌：{{stock.data.uppic}}		
+			涨跌幅%：{{stock.data.limit}}		
+			买入价：{{stock.data.inpic}}		
+			卖出价：{{stock.data.outpic}}	
+			成交额（元）：{{stock.data.traAmount}}	
+			成交量（股）：{{stock.data.traNumber}}		
+			市盈率：{{stock.data.priearn}}	
+			52周最高：{{stock.data.max52}}		
+			52周最低：{{stock.data.min52}}		
+			日期：{{stock.data.date}}		
+			更新时间：{{stock.data.time}}		
+			</text>	 
+			<text class="kline_title">-------------------------------
+			分时K线图
+			</text>
+			<image class="kline_img" src="{{stock.gopicture.minurl}}" />  
+		</view>
+
+		<view class="detail_wrp" wx:if="{{check=='sh'&&stock.data.buyOnePri!=null}}">
+			<text >股票编号：{{stock.data.gid}}		
+				涨跌百分比：{{stock.data.increPer}}                             
+				涨跌额：{{stock.data.increase}}                            
+				股票名称：{{stock.dapandata.name}}				
+				今日开盘价：{{stock.data.todayStartPri}}		
+				昨日收盘价：{{stock.data.yestodEndPri}}			
+				当前价格：{{stock.dapandata.nowPri}}			
+				今日最高价：{{stock.data.todayMax}}			
+				今日最低价：{{stock.data.todayMin}}				
+				竞买价：{{stock.data.competitivePri}}			
+				竞卖价：{{stock.data.reservePri}}				
+				成交量：{{stock.dapandata.traNumber}}				
+				成交金额：{{stock.dapandata.traAmount}}			
+				买一：{{stock.data.buyOne}}			
+				买一报价：{{stock.data.buyOnePri}}			
+				买二：{{stock.data.buyTwo}}				
+				买二报价：{{stock.data.buyTwoPri}}				
+				买三：{{stock.data.buyThree}}			
+				买三报价：{{stock.data.buyThreePri}}				
+				买四：{{stock.data.buyFour}}				
+				买四报价：{{stock.data.buyFourPri}}				
+				买五：{{stock.data.buyFive}}				
+				买五报价：{{stock.data.buyFivePri}}				
+				卖一：{{stock.data.sellOne}}				
+				卖一报价：{{stock.data.sellOnePri}}				
+				卖二：{{stock.data.sellTwo}}				
+				卖二报价：{{stock.data.sellTwoPri}}				
+				卖三：{{stock.data.sellThree}}				
+				卖三报价：{{stock.data.sellThreePri}}				
+				卖四：{{stock.data.sellFour}}				
+				卖四报价：{{stock.data.sellFourPri}}						
+				卖五：{{stock.data.sellFive}}				
+				卖五报价：{{stock.data.sellFivePri}}				
+				日期：{{stock.data.date}}			
+				时间：{{stock.data.time}}				
+			</text>		
+		</view>
+
+		<view class="detail_wrp" wx:if="{{check=='usa'&&stock.data.min52!=null}}">
+			<text >股票编号：{{stock.data.gid}}			
+				股票名称：{{stock.data.name}}			
+				最新价：{{stock.data.lastestpri}}			
+				开盘价：{{stock.data.openpri}}		
+				前收盘价：{{stock.data.formpri}}		
+				最高价：{{stock.data.maxpri}}			
+				最低价：{{stock.data.minpri}}			
+				涨跌额：{{stock.data.uppic}}				
+				涨跌幅%：{{stock.data.limit}}				
+				成交量（股）：{{stock.data.traAmount}}			
+				平均成交量（股）：{{stock.data.avgTraNumber}}		
+				市值：{{stock.data.markValue}}		
+				52周最高：{{stock.data.max52}}			
+				52周最低：{{stock.data.min52}}			
+				美股收益：{{stock.data.EPS}}				
+				市盈率：{{stock.data.priearn}}			
+				贝塔系数：{{stock.data.beta}}				
+				股息：{{stock.data.divident}}			
+				收益率：{{stock.data.ROR}}				
+				股本：{{stock.data.capital}}				
+				盘后价：{{stock.data.afterpic}}			
+				盘后涨跌幅%：{{stock.data.afterlimit}}			
+				盘后涨跌额：{{stock.data.afteruppic}}			
+				盘后计算时间：{{stock.data.aftertime}}	
+				美国当前更新时间：{{stock.data.ustime}}		
+				中国时间：{{stock.data.chtime}}
+			</text>
+			<text class="kline_title">-------------------------------
+			分时K线图
+			</text>
+			<image class="kline_img" src="{{stock.gopicture.minurl}}" />
+		</view>
+	
+</view>
+
+
+
+
+<!-- 
+        
+
+	},
+	"gopicture":{
+		"minurl":"http://image.sinajs.cn/newchart/hk_stock/min/00001.gif",分时K线：
+		"dayurl":"http://image.sinajs.cn/newchart/hk_stock/daily/00001.gif",日K线图：
+		"weekurl":"http://image.sinajs.cn/newchart/hk_stock/weekly/00001.gif",周K线图：
+		"monthurl":"http://image.sinajs.cn/newchart/hk_stock/monthly/00001.gif"月K线图：
+	},
+	"hengsheng_data": {恒生指数：
+                "date":"2014/05/12",//日期
+                "formpri":"21862.99",//前收盘价
+                "lastestpri":"22220.65",//最新价
+                "limit":"1.64",//涨跌幅%
+                "max52":"24111.55",//52周最高
+                "maxpri":"22250.28",//最高价
+                "min52":"0.00",//52周最低
+                "minpri":"21796.90",//最低价
+                "openpri":"21921.59",//开盘价
+                "time":"11:44:00",//时间 
+                "traAmount":"31524616000",//成交额
+                "uppic":"357.66"//涨跌额
+
+
+
+
+
+
+
+                
+	},
+	"gopicture":{
+	"minurl":"http://image.sinajs.cn/newchartv5/usstock/min/aapl.gif",分时K线图：
+	"min_weekpic":"http://image.sinajs.cn/newchartv5/usstock/min_week/aapl.gif",5日K线图：
+	"dayurl":"http://image.sinajs.cn/newchartv5/usstock/daily/aapl.gif",日K线图：
+	"weekurl":"http://image.sinajs.cn/newchartv5/usstock/weekly/aapl.gif",周K线图：
+	"monthurl":"http://image.sinajs.cn/newchartv5/usstock/monthly/aapl.gif"月K线图：
+	}
+
+ -->

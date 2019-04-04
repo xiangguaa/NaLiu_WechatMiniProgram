@@ -1,0 +1,23 @@
+<view class="main">
+    <!-- 翻译上界面 -->
+    <view  id="top"class="pad">
+        <textarea class="s_words" placeholder="请输入要翻译的语句或单词"  bindblur="getInput"></textarea>
+    </view>
+
+    <!-- 翻译按钮 -->
+    <view class="button_wrp" bind:tap="startTrans">
+        <image src="../../icons/other_icons/translate.png" />
+    </view>
+    
+
+    <!-- 下界面 -->
+    <view id="down" class="pad" >
+        <view class="d_words"><text >{{d_words}}</text></view>
+    </view>
+
+    <!-- 底部提示 -->
+    <view class="title">-------翻-----译-------</view>
+
+
+
+</view>

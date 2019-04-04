@@ -1,0 +1,30 @@
+<view class="main">
+    <view class="title"><text >今日食谱</text></view>
+    <view class="input_wrp">
+        <input placeholder="请输入要查询的食材信息" bindconfirm="getRecipe" />
+    </view>
+    <view class="detial_wrp" wx:for="{{recipe}}" wx:key="{{index}}">
+        <view class="unit">
+            <view class="name" wx:if="{{!isshow[index]}}">
+                <view class="unit_name"><text>{{item.name}}</text></view>
+                <image class="arrow"  id="{{index}}" src="../../icons/other_icons/spread.png" bind:tap="getSpread" wx:if="{{!isshow[index]}}" />
+            </view>
+            <view class="name" wx:if="{{isshow[index]}}">
+                <view class="unit_name"><text>{{item.name}}</text></view>
+                <image class="arrow"  id="{{index}}" src="../../icons/other_icons/close.png" bind:tap="getClose" wx:if="{{isshow[index]}}"/>
+            </view>
+            <view class="detial" wx:if="{{isshow[index]}}">
+                <view class="content"><text >{{item.content}}</text></view>
+                <view class="material" wx:for="{{item.material}}" wx:key="{{index}}">
+                    <view class="mname">{{item.mname}}:{{item.amount}}</view>
+                </view>
+                <view class="progress" wx:for="{{item.process}}" wx:key="{{index}}">
+                    <view class="progress_text"><text >{{item.pcontent}}</text></view>
+                    <view class="progress_img"><image mode="aspectFit" src="{{item.pic}}" /></view>
+                </view>
+            </view>
+           
+        </view>
+    </view>
+
+</view>

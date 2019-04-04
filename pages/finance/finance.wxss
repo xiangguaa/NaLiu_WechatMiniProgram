@@ -1,0 +1,12 @@
+.nav{
+    height: 200rpx;
+    margin: 15rpx;
+    margin-top: 20rpx;
+    background-color: rgb(107, 179, 125);
+    border-radius: 15rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50rpx;
+    letter-spacing: 10rpx;
+}
