@@ -18,7 +18,7 @@ Page({
     let that=this;  
     console.log(that.data.p_content.length);
     var tmp=that.data.p_content;
-    var ke = tmp.replace(/。,/g, '。\n\n').replace(/。/g, '。\n').replace(/！,/g, '。\n').replace(/？,/g, '。\n').replace(/？/g, '。\n').replace(/！/g, '。\n');
+    var ke = tmp.replace(/。,/g, '。\n').replace(/！,/g, '。\n').replace(/？,/g, '。\n').replace(/。/g, '。\n\n').replace(/？/g, '。\n\n').replace(/！/g, '。\n\n');
         console.log(ke);
     that.setData({
       p_content_real:ke
