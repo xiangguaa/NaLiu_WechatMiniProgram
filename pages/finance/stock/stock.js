@@ -13,7 +13,8 @@ Page({
       ],
     check:'b',
     stock:[],
-    ischeck:'a'
+    ischeck:'a',
+
 
   },
 
