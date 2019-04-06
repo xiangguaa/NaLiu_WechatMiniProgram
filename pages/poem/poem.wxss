@@ -1,3 +1,10 @@
+page{
+    height: 100%;
+    background-color:rgb(232, 235, 228);
+    border-radius: 10rpx;
+}
+
+
 .title{
     margin-top: 30rpx;
     display: flex;
@@ -5,16 +12,16 @@
     align-items: center;
     margin-left: 50rpx;
     margin-right: 50rpx;
-    background-color: rgb(233, 245, 10);
+    background-color: rgb(198, 199, 186);
     border-radius: 15rpx;
     font-size: 42rpx;
-    letter-spacing: 15rpx;
+    letter-spacing: 10rpx;
     font-weight: 700;
 }
 
 .author{
     margin-top: 24rpx;
-    background-color: rgb(230, 20, 20);
+    background-color: rgb(194, 186, 186);
     width: 200rpx;
     position: relative;
     left: 500rpx;
@@ -25,9 +32,13 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    border-color: rgb(0, 0, 0);
+    border-width: 20rpx;
 }
 
 .content{
+    margin: 15rpx;
+    background-color: rgb(232, 235, 228);
     padding-top: 50rpx;
     padding-left: 15rpx;
     display: flex;
