@@ -11,7 +11,6 @@
 
 .detail01{
     height: 370rpx;
-    /* background-color: #1aa; */
     border-radius: 15rpx;
     position: relative;
     top: 20rpx;
@@ -35,14 +34,18 @@
     font-weight: bold;
     letter-spacing: 10rpx;
 }
-
-.bus_input{
+.bus_wrp{
     margin-top: 10rpx;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+}
+.bus_input{
     height: 67rpx;
+    width: 82%;
     background-color: rgb(255, 255, 255);
     border-radius: 7rpx;
     display: flex;
-    justify-content: center;
     align-items: center;
     letter-spacing: 5rpx;
     justify-content: left;

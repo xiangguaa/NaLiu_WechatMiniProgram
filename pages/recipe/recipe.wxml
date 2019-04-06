@@ -1,7 +1,7 @@
 <view class="main">
     <view class="title"><text >今日食谱</text></view>
     <view class="input_wrp">
-        <input placeholder="请输入要查询的食材信息" bindconfirm="getRecipe" />
+        <input placeholder-class="input-placeholder" placeholder="请输入要查询的食材信息" bindconfirm="getRecipe" />
     </view>
     <view class="detial_wrp" wx:for="{{recipe}}" wx:key="{{index}}">
         <view class="unit">
@@ -14,7 +14,7 @@
                 <image class="arrow"  id="{{index}}" src="../../icons/other_icons/close.png" bind:tap="getClose" wx:if="{{isshow[index]}}"/>
             </view>
             <view class="detial" wx:if="{{isshow[index]}}">
-                <view class="content"><text >{{item.content}}</text></view>
+                <text class="content" >{{item.content}}</text>
                 <view class="material" wx:for="{{item.material}}" wx:key="{{index}}">
                     <view class="mname">{{item.mname}}:{{item.amount}}</view>
                 </view>

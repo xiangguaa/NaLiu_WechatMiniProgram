@@ -3,7 +3,7 @@
     
     <view class="input_wrp">
         <input class="input"  value="{{input_value}}" placeholder="请输入要查询的股票代码："  bindconfirm="getCode"/>
-        <view class="pic_wrp" bindtap="getClear" ><image class="pic" src="../../../icons/weather_icons/b.png" /></view>
+        <view class="pic_wrp" bindtap="getClear" ><image class="pic" src="../../../icons/other_icons/delete.png" /></view>
     </view>
     <view class="detail_wrp">
         <!-- <view wx:for="{{fund_ramdom}}">{{index}}???????????/</view> -->

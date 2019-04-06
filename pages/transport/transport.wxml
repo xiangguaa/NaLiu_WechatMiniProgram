@@ -3,9 +3,15 @@
         <!-- 标题 -->
         <view class="title">公交线路查询·{{city}}</view>
         <!-- 输入框 -->
-        <view class="bus_input">
-            <input id="bus" bindconfirm="get_businput" placeholder="输入查询线路"  />
+        <view class="bus_wrp">
+            <view class="bus_input">
+                <input id="bus" bindblur="get_businput" placeholder="输入查询线路"  />
+            </view> 
+            <view class="confirm">确认</view>
+            
         </view>
+        
+        
         <!-- 返回结果框 -->
          <view class="detail01">
              

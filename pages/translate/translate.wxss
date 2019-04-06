@@ -3,7 +3,7 @@
 
 .pad{
     height: 450rpx;
-    background-color: rgb(139, 161, 160);
+    background-color: rgb(52, 141, 176);
     border-radius: 15rpx;
     margin-left: 20rpx;
     margin-right: 20rpx;
@@ -11,11 +11,14 @@
     display: flex;
 
 }
-
+.place_holder{
+    font-weight: 400;
+    color: aliceblue;
+}
 
 .button_wrp{
     height: 70rpx;
-    background-color: rgb(104, 50, 101);
+    background-color: #1b565f;
     align-items: center;
     justify-content: center;
     margin-left: 150rpx;

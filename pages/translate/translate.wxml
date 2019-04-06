@@ -1,7 +1,7 @@
 <view class="main">
     <!-- 翻译上界面 -->
     <view  id="top"class="pad">
-        <textarea class="s_words" placeholder="请输入要翻译的语句或单词"  bindblur="getInput"></textarea>
+        <textarea class="s_words" placeholder-class="place_holder" placeholder="请输入要翻译的语句或单词"  bindblur="getInput"></textarea>
     </view>
 
     <!-- 翻译按钮 -->

@@ -1,8 +1,8 @@
 <view class="main">
     <view class="wrp" wx:for="{{news_list}}" wx:key="{{index}}">
-        <navigator  class="title"   url="detail/detail?id={{item.url}}">
+        <view  class="title"   url="detail/detail?id={{item.url}}">
             {{item.title}}
-         </navigator>
+         </view>
     </view>
     
 
