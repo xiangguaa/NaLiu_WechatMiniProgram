@@ -3,6 +3,10 @@
     <view class="input_wrp">
         <input placeholder-class="input-placeholder" placeholder="请输入要查询的食材信息" bindconfirm="getRecipe" />
     </view>
+    <text class="suggest_title" wx:if="{{isshow_suggest}}">养生建议</text>
+    <view class="suggest" wx:for="{{suggest}}" wx:key="{{index}}" wx:if="{{isshow_suggest}}">
+        <text >{{item}}</text>
+    </view>
     <view class="detial_wrp" wx:for="{{recipe}}" wx:key="{{index}}">
         <view class="unit">
             <view class="name" wx:if="{{!isshow[index]}}">

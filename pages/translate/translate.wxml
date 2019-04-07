@@ -1,4 +1,6 @@
 <view class="main">
+    <!-- 底部提示 -->
+    <view class="title">-------翻-----译-------</view>
     <!-- 翻译上界面 -->
     <view  id="top"class="pad">
         <textarea class="s_words" placeholder-class="place_holder" placeholder="请输入要翻译的语句或单词"  bindblur="getInput"></textarea>
@@ -15,8 +17,7 @@
         <view class="d_words"><text >{{d_words}}</text></view>
     </view>
 
-    <!-- 底部提示 -->
-    <view class="title">-------翻-----译-------</view>
+    
 
 
 

@@ -7,7 +7,7 @@
     </view>
     <view class="detail_wrp">
         <!-- <view wx:for="{{fund_ramdom}}">{{index}}???????????/</view> -->
-        <view class="detail" wx:for="{{fund_random_new}}" wx:key="{{index}}" wx:if="{{showorhide}}" >
+        <view class="detail" wx:for="{{fund_random_new}}" wx:key="{{index}}" wx:if="{{showorhide&&isshow}}" >
             <text >股票代码：{{item.code}}
                 股票名称：{{item.name}}
                 成交额：{{item.amount}}
@@ -41,6 +41,7 @@
                 成交量：{{fund_search.volume}}
             </text>           
         </view>
+        <view class="error_view" wx:if="{{!isshow}}"><text >{{messgn}}</text></view>
     </view>
 </view>
 

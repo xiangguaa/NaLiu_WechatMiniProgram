@@ -1,8 +1,14 @@
+page{
+    height: 100%;
+}
 
+.main{
+    height: 100%;
+}
 
 
 .pad{
-    height: 450rpx;
+    height: 40%;
     background-color: rgb(52, 141, 176);
     border-radius: 15rpx;
     margin-left: 20rpx;
@@ -53,12 +59,15 @@
 }
 
 .title{
-    height: 90rpx;
-    margin: 15rpx;
+    height: 5%;
+    margin-top: 10rpx;
+    margin-bottom: 4rpx;
+    margin-left: 22rpx;
+    margin-right: 22rpx;
     background-color: #229999;
-    border-radius: 15rpx;
-    position: relative;
-    bottom: 70rpx;
+    border-radius: 7rpx;
+    /* position: relative;
+    bottom: 70rpx; */
     display: flex;
     align-items: center;
     justify-content: center;

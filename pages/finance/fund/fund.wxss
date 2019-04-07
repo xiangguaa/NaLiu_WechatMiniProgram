@@ -80,3 +80,10 @@
 
 }
 
+.error_view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70rpx;
+    letter-spacing: 10rpx;
+}

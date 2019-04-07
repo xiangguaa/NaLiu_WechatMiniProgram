@@ -21,6 +21,17 @@
 .input-placeholder{
     margin-left: 10rpx;
 }
+.suggest_title{
+    font-size: 60rpx;
+    margin: 15rpx;
+    letter-spacing: 12rpx;
+}
+.suggest{
+    margin: 15rpx;
+    background-color: rgb(202, 208, 153);
+    border-radius: 10rpx;
+}
+
 
 .unit{
     margin-top: 30rpx;

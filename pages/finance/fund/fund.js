@@ -13,7 +13,9 @@ Page({
     input_value:"",
     fund_search:[], 
     fund_random_new:null,
-    fund_new:[]
+    fund_new:[],
+    isshow:true,
+    messgn:''
   },
 
 
@@ -67,7 +69,13 @@ Page({
       fund_random_new:tmp01,
       fund_new:tmp02
     });
-    
+    if(this.data.fund_random_new[0].code!=null){
+      this.setData({isshow:true,messgn:''});
+    }
+    else{
+      this.setData({isshow:false,messgn:'查询出错，请重启小程序尝试更新。'});
+    }
+    console.log(this.data.isshow)
     
   },
 
