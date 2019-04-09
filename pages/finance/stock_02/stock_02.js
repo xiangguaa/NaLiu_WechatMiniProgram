@@ -62,7 +62,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    apis.setNavBar(200,"基金信息");
+    apis.setNavBar(200,"股票实时");
     var tmp01=app.globalData.fund_random_copy;
     var tmp02=app.globalData.fund;
     this.setData({

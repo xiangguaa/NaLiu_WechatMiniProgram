@@ -13,7 +13,7 @@
 .detail{
     padding: 7rpx;
     margin: 10rpx;
-    background-color: #159;
+    background-color: rgb(55, 213, 207);
     border-radius:6rpx;
 }
 
