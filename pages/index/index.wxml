@@ -1,30 +1,69 @@
 
-
+<view class="poem_wrp">
+  <view class="tape_wrp">
+    <view class="tape"></view>
+    <view class="tape"></view>
+  </view>
+  
   <navigator class="poem" url="../poem/poem?title={{onePoem.data.origin.title}}&author={{onePoem.data.origin.author}}&content={{onePoem.data.origin.content}}">
-    <text class="t1">{{onePoem.data.content}}</text>
-    <text class="t2" color='red'>原文</text>
+    <image class="poem_img" src="../../icons/index_icons/poem_bac.jpg" />
+    
+    <view class="text_wrp">
+      <text class="t1">{{onePoem.data.content}}</text>
+      <text class="t2" decode="{{true}}" >
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{onePoem.data.origin.author}}</text>
+    </view>
   </navigator>
-
+</view>
 
 
   <view class="main_content">
     
-    <!-- <view class="weather"> -->
-      <navigator id='wea' url="../weather/weather"class="nav">天气</navigator>
-      <!-- </view> -->
-      <navigator id='tsl' url="../translate/translate"class="nav">翻译</navigator>
-    <!-- </view> -->
-      <navigator id='trn' url="../transport/transport"class="nav">交通</navigator>
-    <!-- </view> -->
-      <navigator id='cal' url="../finance/finance"class="nav">金融</navigator>
+    <navigator id='wea' url="../weather/weather"class="nav">
+      <image class="img" src="../../icons/index_icons/wea.png" />
+      <text class="text1">天气</text>
+    </navigator>
+ 
+    <navigator id='trn' url="../transport/transport"class="nav">
+      <image class="img" src="../../icons/index_icons/trans.png" />
+      <text class="text2">交通</text>  
+    </navigator>
+
+
+    <navigator id='tsl' url="../translate/translate"class="nav">
+      <image class="img" src="../../icons/index_icons/wea.png" />
+      <text class="text2">翻译</text>
+    </navigator>
+
+    <navigator id='new' url="../news/news"class="nav">
+      <image class="img" src="../../icons/index_icons/new.png" />
+      <text class="text1">热闻</text>
+    </navigator>
+
+
+    <navigator id='rec' url="../recipe/recipe" class="long_nav">
+      <image class="img2" src="../../icons/index_icons/hea.jpg" />
+      <text class="text3">今日食谱</text>
+    </navigator>
+
+    <navigator id='fin' url="../finance/finance"class="nav">
+      <image class="img" src="../../icons/index_icons/finas.png" />
+      <text class="text1">金融</text>
+    </navigator>
     
-    <!-- </view> -->
-      <navigator id='tsl' url="../news/news"class="nav">热闻</navigator>
-    <!-- </view> -->
-      <navigator id='tsl' url="../delivery/delivery"class="nav">快递</navigator>
-    <!-- </view> -->
-      <navigator id='rec' url="../recipe/recipe" class="long_nav">今日食谱</navigator>
-    <!-- </view> -->
-      <navigator id='his' url="../history/history" class="long_nav">历史上的今天</navigator>
+      
+
+    <navigator id='del' url="../delivery/delivery"class="nav">
+      <image class="img" src="../../icons/index_icons/wea.png" />
+      <text class="text2">快递</text>
+    </navigator>
+   
+    
+
+    <navigator id='his' url="../history/history" class="long_nav" wx:if="{{false}}">
+      <image class="img3" src="../../icons/index_icons/wea.png" />
+      <text class="text3">历史上的今天</text>
+    </navigator>
     
   </view>

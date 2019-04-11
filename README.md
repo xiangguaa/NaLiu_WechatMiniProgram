@@ -5,5 +5,8 @@
 update01:
 将金融部分不能使用的模块删除，并优化其布局
 
-update01:
+update02:
 更改部分文字信息
+
+upader03:
+重新设计index界面

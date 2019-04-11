@@ -18,7 +18,7 @@ Page({
     var that=this;
     that.setData({isshow:[],isshow_suggest:false})
     wx.request({
-      url:"https://way.jd.com/jisuapi/search?keyword="+e.detail.value+"&num=5&appkey=de0c34ea873c2f03503696703f9be906",
+      url:"https://way.jd.com/jisuapi/search?keyword="+e.detail.value+"&num=7&appkey=de0c34ea873c2f03503696703f9be906",
       success(res){
         // console.log(res);
         if(res.data.code==='10000'){

@@ -51,7 +51,8 @@
     background-color: #395;
     border-radius: 10rpx;
     margin: 20rpx;
-    height: 100rpx;
+    padding: 10rpx;
+    /* height: 100rpx; */
 }
 .unit_name{
     margin-left: 12rpx;
