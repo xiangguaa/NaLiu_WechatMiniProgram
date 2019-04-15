@@ -1,40 +1,35 @@
   {
   "pages":[
     "pages/index/index",
-    "pages/recipe/recipe",
-    
-    "pages/history/history",
-    "pages/finance/dapan/dapan",
-    
-    
     "pages/delivery/delivery",
-    "pages/poem/poem",
-    "pages/news/news" ,
-    "pages/finance/stock/stock",
-   
-    "pages/finance/stock_02/stock_02",
     
+    "pages/news/news",
     
-    "pages/finance/exchange/exchange",
-    "pages/finance/finance",
-    
-
-    
-
     "pages/weather/weather",
-   
     
+    "pages/recipe/recipe",
+    "pages/transport/transport",  
     
-   
+    "pages/finance/dapan/dapan",
+    "pages/finance/finance",
+    "pages/finance/dapan/detail/detail",
+               
     "pages/translate/translate",
-    "pages/transport/transport"   
-
+    "pages/history/history",   
+    
+    "pages/poem/poem",
+    
+    "pages/finance/stock/stock",   
+    "pages/finance/stock_02/stock_02",
+    "pages/finance/exchange/exchange"
+    
+      
   ],
   
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#3ff",
-    "navigationBarTitleText": "Old Helper",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "ASSIST",
     "navigationBarTextStyle":"black"
   },
   "permission": {

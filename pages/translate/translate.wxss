@@ -4,72 +4,70 @@ page{
 
 .main{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
 .pad{
-    height: 40%;
-    background-color: rgb(52, 141, 176);
-    border-radius: 15rpx;
-    margin-left: 20rpx;
-    margin-right: 20rpx;
+    height: 32%;
+    background-color:#f5f5f5;
+    border-radius: 20rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
     padding: 30rpx;
+    padding-top: 45rpx;
     display: flex;
-
+    border-style: solid;
+    border-width: 2rpx;
+    border-color: #c5c3e6;
 }
 .place_holder{
     font-weight: 400;
-    color: aliceblue;
+    color: #b8b8b8;
 }
 
 .button_wrp{
-    height: 70rpx;
-    background-color: #1b565f;
+    height: 10%;
+    background-color: #c5c3e6;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 150rpx;
     margin-right: 150rpx;
-    position: relative;
-    bottom: 32rpx;
     border-radius: 15rpx;
     z-index: 100;
-    display: flex;
-
+    box-shadow: 0px 2px 4px 2px #c5c3e6;
+}
+.button_wrp text{
+    color: white;
+    font-size: 50rpx;
 }
 
-.button_wrp image{
-    width: 70rpx;
-    height: 60rpx;
-
-}
 
 #down{
-    margin-top: 10rpx;
     position: relative;
-    bottom: 70rpx;
-    margin-top: 10rpx;
-    padding: 24rpx;
+    bottom: 3.5%;
+
 }
-
-
-
-
 #top{
-    margin-top: 20rpx;
+    position: relative;
+    top: 3.5%;
 }
 
 .title{
-    height: 5%;
-    margin-top: 10rpx;
-    margin-bottom: 4rpx;
-    margin-left: 22rpx;
-    margin-right: 22rpx;
-    background-color: #229999;
-    border-radius: 7rpx;
-    /* position: relative;
-    bottom: 70rpx; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 40rpx;
     letter-spacing: 14rpx;
+    font-size: 55rpx;
+}
+
+.suggest{
+    position: relative;
+    left: 47%;
+    bottom: 3%;    
+}
+.suggest text{
+    color: #b8b8b8;
+    font-size: 30rpx;
 }

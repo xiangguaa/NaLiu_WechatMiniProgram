@@ -8,8 +8,8 @@
     <view class="detail_wrp">
         <!-- <view wx:for="{{fund_ramdom}}">{{index}}???????????/</view> -->
         <view class="detail" wx:for="{{fund_random_new}}" wx:key="{{index}}" wx:if="{{showorhide&&isshow}}" >
+            <view class="stock_name"><text >{{item.name}}</text></view>
             <text >股票代码：{{item.code}}
-                股票名称：{{item.name}}
                 成交额：{{item.amount}}
                 涨跌幅：{{item.changepercent}}
                 最高价：{{item.high}}
@@ -25,8 +25,8 @@
             </text>
         </view>
         <view class="search_detail" wx:if="{{!(showorhide)}}">
+            <view class="stock_name"><text >{{item.name}}</text></view>
             <text >股票代码：{{fund_search.code}}
-                股票名称：{{fund_search.name}}
                 成交额：{{fund_search.amount}}
                 涨跌幅：{{fund_search.changepercent}}
                 最高价：{{fund_search.high}}

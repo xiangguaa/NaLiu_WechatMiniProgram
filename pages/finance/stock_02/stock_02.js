@@ -69,11 +69,11 @@ Page({
       fund_random_new:tmp01,
       fund_new:tmp02
     });
-    if(this.data.fund_random_new[0].code!=null){
+    if(this.data.fund_random_new.length!=0){
       this.setData({isshow:true,messgn:''});
     }
     else{
-      this.setData({isshow:false,messgn:'查询出错，请重启小程序尝试更新。'});
+      this.setData({isshow:false,messgn:'未完成数据加载，请退出当前页面，等待5-10秒后，尝试重新打开。'});
     }
     console.log(this.data.isshow)
     

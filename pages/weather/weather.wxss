@@ -7,14 +7,18 @@ page{
 }
 
 .head{
-    width: 99%;
+    /* width: 99%; */
     height: 6%;
-    background-color: #6D9DC5;
+    /* background-color: #6D9DC5; */
     border-radius: 10rpx;
     text-align: center;
-    margin-top: 0.7%;
-    margin-left: 4rpx;
-    margin-right: 4rpx; 
+    margin-top: 0.8%;
+    margin-left: 20rpx;
+    margin-right: 20rpx; 
+    border-style: solid;
+    border-width: 2rpx;
+    margin-bottom: 20rpx;
+    box-shadow: 1rpx 1rpx 10rpx 1rpx;
 
 }
 .title{
@@ -22,17 +26,17 @@ page{
     font-style: italic;
     letter-spacing: 50rpx;
     position: relative;
-    right: 150rpx;
+    right: 100rpx;
 }
 
 .city{
     position: absolute;
     top:15rpx;
-    left: 550rpx;
+    left: 510rpx;
     border-radius: 15rpx;
     width: 25%;
     height: 60rpx;
-    background-color: rgb(154, 180, 201);
+    background-color: rgb(247, 247, 247);
     display: flex;
     text-align: center;
     justify-content: center;
@@ -43,26 +47,31 @@ page{
 .suggest{
     font-size: 35rpx;
     text-indent: 50rpx;
-    background-color: #70D6FF;
+    background-color: rgb(238, 238, 234);
     height: 4%;
     padding: 10rpx;
     border-radius: 7rpx;
     margin-top: 1%;
-    margin-left: 10rpx;
-    margin-right: 10rpx;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
 
 }
 
 .detail{
     height: 17.10%;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+
 }
 
 
 
 .unit{
     height: 100%;
-    background-color: #70D6FF;
-    margin: 0.6%;
+    background-color: rgb(236, 240, 241);
+    margin-top: 2%;
+    margin: 1%;
     border-radius: 15rpx;
     display: flex;
     justify-content: space-between;

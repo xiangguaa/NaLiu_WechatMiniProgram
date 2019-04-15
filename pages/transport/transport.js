@@ -15,7 +15,8 @@ Page({
     s_longitude:0,
     d_latitude:0,
     d_longitude:0,
-    route:[]
+    route:[],
+    isshowroute:true
   },
 
   
@@ -55,15 +56,25 @@ Page({
             d_latitude:res.data.result.location.lat,
             d_longitude:res.data.result.location.lng
           })
-        }
-
+        } 
       }
     });
+    if(that.data.s_latitude!=0&&that.data.d_latitude!=0){
+      wx.request({
+        url:"https://api.map.baidu.com/direction/v2/transit?origin="+that.data.s_latitude+","+that.data.s_longitude+"&destination="+that.data.d_latitude+","+that.data.d_longitude+"&ak=GjIDlN80K3FHakBEn8hMyYofw4bpGXCE",
+        success(res){
+          console.log(res);
+          that.setData({
+            route:res.data.result.routes
+          });
+          console.log(that.data.route)
+        }
+      })
+    }
 
-    // 路线查询
-    
 
   },
+
 
   get_route:function(e){
     console.log(e);
@@ -89,7 +100,7 @@ Page({
   get_businput:function(e){
     let that=this;
     that.setData({
-      bus_name:e.detail.value
+      bus_name:e.detail.value,
     });
     console.log(that.data.bus_name);
     console.log(that.data.city.substr(0,2));

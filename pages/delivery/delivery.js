@@ -7,7 +7,9 @@ Page({
    */
   data: {
     del_num:null,
-    detail:[]
+    detail:[],
+    i_value:'',
+    isshow_detail:true
     
 
   },
@@ -29,7 +31,11 @@ Page({
       }
     })
   },
-
+  get_cancel(e){
+    console.log(e)
+    let that=this;
+    that.setData({i_value:'',isshow_detail:false});
+  },
   
 
   /**

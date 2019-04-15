@@ -1,9 +1,19 @@
 <view class="main">
     <view class="title">金融信息</view>
-    <navigator class="nav" url="dapan/dapan">大盘指数</navigator>
-    <navigator class="nav" url="exchange/exchange">汇率数据</navigator>
+    <navigator id="dapan" class="nav" url="dapan/dapan">
+        <!-- <view class="dapan_img"></view> -->
+        <image class="dapan_img" src="../../icons/finace_icons/dapan.jpg" />
+        <text class="n_title">大盘指数</text>
+    </navigator>
+    <navigator class="nav" url="exchange/exchange">
+        <image class="exchange_img" src="../../icons/finace_icons/exchange.jpg" />
+        <text class="n_title">汇率数据</text>
+    </navigator>
     <navigator class="nav" url="stock/stock" wx:if="{{false}}">股票数据</navigator>
-    <navigator class="nav" url="stock_02/stock_02">股票行情</navigator>
+    <navigator class="nav" url="stock_02/stock_02">
+        <image class="stock_img" src="../../icons/finace_icons/stock.jpg" />
+        <text class="n_title">股票行情</text>
+    </navigator>
 
     
 </view>

@@ -5,9 +5,9 @@
         <!-- 输入框 -->
         <view class="bus_wrp">
             <view class="bus_input">
-                <input id="bus" bindblur="get_businput" placeholder="输入查询线路"  />
+                <input id="bus" bindfocus="show_route" bindblur="get_businput" placeholder="输入查询线路"  />
             </view> 
-            <view class="confirm">确认</view>
+            <view class="confirm" >确认</view>
             
         </view>
         
@@ -21,7 +21,7 @@
         
     </view>
 
-    <view class="wrp">
+    <view class="wrp" >
         <!-- 标题 -->
         <view class="title">乘车线路查询</view>
         <!-- 输入框 -->
@@ -39,10 +39,9 @@
         <!-- 返回结果框 -->
         <view class="detail02">
             <view  wx:for="{{route[0].steps}}" wx:key="index">
-                <text id="rou_detail">{{item[0].instructions}}--></text>
-                
+                <text id="rou_detail">-->{{item[0].instructions}}</text>
             </view>
-            <text wx:if="{{route.length!=0}}">结束</text>
+            
             
         </view>
         

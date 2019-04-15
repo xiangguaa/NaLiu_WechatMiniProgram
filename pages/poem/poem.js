@@ -18,7 +18,8 @@ Page({
     let that=this;  
     console.log(that.data.p_content.length);
     var tmp=that.data.p_content;
-    var ke = tmp.replace(/。,/g, '。\n').replace(/！,/g, '。\n').replace(/？,/g, '。\n').replace(/。/g, '。\n\n').replace(/？/g, '。\n\n').replace(/！/g, '。\n\n');
+    var ke = tmp.replace(/。,/g, '。\n').replace(/！,/g, '。\n').replace(/？,/g, '。\n').replace(/。/g,'。\n')
+    // .replace(/。/g, '。\n').replace(/？/g, '。\n').replace(/！/g, '。\n');
         console.log(ke);
     that.setData({
       p_content_real:ke
@@ -32,9 +33,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // console.log(options.title);
-    // console.log(options.author);
-    // console.log(options.content);
     this.setData({
       p_title:options.title,
       p_author:options.author,
@@ -44,7 +42,6 @@ Page({
     this.setFormat();
 
  
-    
 
 
   },

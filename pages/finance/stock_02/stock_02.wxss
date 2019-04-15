@@ -1,7 +1,6 @@
 .wrp{
-    background-color:#3ff;
     border-radius: 15rpx;
-
+    background-color: #fbfbfb;
 }
 
 
@@ -10,7 +9,6 @@
     margin: 5rpx;
     height: 70rpx;
     border-radius: 15rpx;
-    background-color: rgb(54, 161, 77);
     display: flex;
     justify-content: center;
   
@@ -21,17 +19,24 @@
 
 .input_wrp{
     height: 70rpx;
-    background-color: rgb(240, 231, 232);
+    background-color: rgb(236, 233, 233);
     display: flex;
     justify-content: space-between; 
     margin: 7rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    border-radius: 30rpx;
+
+    
 }
 
 .input{
-    width: 500rpx;
+    /* width: 500rpx; */
     height: 70rpx;
     border-radius: 15rpx;
     text-indent: 10rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
     
 }
 
@@ -43,11 +48,10 @@
 } */
 
 .pic{
-    width: 70rpx;
-    height: 70rpx;
+    width: 60rpx;
+    height: 60rpx;
     position: relative;
-    top: 0rpx;
- 
+    top: 6rpx;
     
 }
 
@@ -55,28 +59,38 @@
 
 .detail_wrp{
     height: 1234rpx;
-    background-color: rgb(119, 31, 31);
     border-radius: 10rpx;
     margin: 5rpx;
     overflow: scroll;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
     
 }
 
 
 .detail{
-    background-color: rgb(13, 100, 42);
+    background-color: #ffffff;
     border-radius: 15rpx;
-    margin: 10rpx;
+    margin: 15rpx;
     padding: 10rpx;
+    border-style: solid;
+    border-width: 3rpx;
+    box-shadow: 0px 2px  3px 2rpx;
+    margin-left: 20rpx; 
 
 }
 
 
 .search_detail{
-    background-color: rgb(13, 100, 42);
+    background-color: #ffffff;
     border-radius: 15rpx;
-    margin: 10rpx;
+    margin: 15rpx;
     padding: 10rpx;
+    border-style: solid;
+    border-width: 3rpx;
+    box-shadow: 0px 2px  3px 2rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
 
 }
 
@@ -86,4 +100,11 @@
     align-items: center;
     font-size: 70rpx;
     letter-spacing: 10rpx;
+}
+
+.stock_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50rpx;
 }

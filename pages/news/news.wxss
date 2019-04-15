@@ -1,21 +1,33 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50rpx;
+    font-weight: 200;
+    letter-spacing: 40rpx;
+
+}
+
 .wrp{
     margin: 20rpx;
-    border-radius: 15rpx;
-    background-color: #3ff;
+    border-radius: 5rpx;
+    background-color: rgb(247, 247, 247);
     height: 110rpx;
     display: flex;
     align-items: center;
     font-size: 40rpx;
+    font-weight: 220;
+    padding: 7rpx;
 
 }
 
 
 
 
-.title{
+.n_title{
     margin: 20rpx;
     border-radius: 15rpx;
-    background-color: #3ff;
+    
     height: 110rpx;
     display: flex;
     align-items: center;

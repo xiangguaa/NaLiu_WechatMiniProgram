@@ -1,27 +1,33 @@
 <view class="main">
-    <view class="title"><text >今日食谱</text></view>
+    <!-- <view class="title"><text >今日食谱</text></view> -->
     <view class="input_wrp">
-        <input placeholder-class="input-placeholder" placeholder="请输入要查询的食材信息" bindconfirm="getRecipe" />
+        <input placeholder-class="input-placeholder" value="{{i_value}}" placeholder="请输入要查询的食材信息" bindconfirm="getRecipe" class="input" />
+        <image class="cancel_img" bind:tap="get_cancel" src="../../icons/other_icons/delete.png" />
     </view>
     <text class="suggest_title" wx:if="{{isshow_suggest}}">养生建议</text>
     <view class="suggest" wx:for="{{suggest}}" wx:key="{{index}}" wx:if="{{isshow_suggest}}">
         <text >{{item}}</text>
     </view>
-    <view class="detial_wrp" wx:for="{{recipe}}" wx:key="{{index}}">
-        <view class="unit">
+    <view class="detial_wrp"  wx:if="{{isshow_detail}}">
+        <view class="unit" wx:for="{{recipe}}" wx:key="{{index}}">
             <view class="name" wx:if="{{!isshow[index]}}">
                 <view class="unit_name"><text>{{item.name}}</text></view>
+                <view class="brief_intro" ><text  >{{item.content}}</text></view>
                 <image class="arrow"  id="{{index}}" src="../../icons/other_icons/spread.png" bind:tap="getSpread" wx:if="{{!isshow[index]}}" />
             </view>
-            <view class="name" wx:if="{{isshow[index]}}">
+            <view class="name" id="open_name" wx:if="{{isshow[index]}}">
                 <view class="unit_name"><text>{{item.name}}</text></view>
+                <view class="brief_intro" >{{item.content}}</view>
                 <image class="arrow"  id="{{index}}" src="../../icons/other_icons/close.png" bind:tap="getClose" wx:if="{{isshow[index]}}"/>
             </view>
             <view class="detial" wx:if="{{isshow[index]}}">
-                <text class="content" >{{item.content}}</text>
-                <view class="material" wx:for="{{item.material}}" wx:key="{{index}}">
-                    <view class="mname">{{item.mname}}:{{item.amount}}</view>
+                <!-- <text class="content" >{{item.content}}</text> -->
+                <view class="material_wrp">
+                    <view class="material" wx:for="{{item.material}}" wx:key="{{index}}">
+                        {{item.mname}}:{{item.amount}}
+                    </view>
                 </view>
+                
                 <view class="progress" wx:for="{{item.process}}" wx:key="{{index}}">
                     <view class="progress_text"><text >{{item.pcontent}}</text></view>
                     <view class="progress_img"><image mode="aspectFit" src="{{item.pic}}" /></view>

@@ -10,14 +10,14 @@
     </view>
 
     <!-- suggest -->
-    <view class="suggest">
+    <view class="suggest" wx:if="{{false}}">
         <text >天气渐冷，请多加衣。</text>
     </view>
 
 
     <view class="detail" wx:for="{{weather_realtime}}" wx:key="index">
         <view class="unit">
-            <view class="text_wrp"><text class="wea_text">{{item.date}}{{item.direct}}{{item.temperature}}{{item.weather}}</text></view>
+            <view class="text_wrp"><text class="wea_text" decode="{{true}}">{{item.date}}&nbsp;&nbsp;&nbsp;&nbsp;{{item.direct}}{{item.temperature}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.weather}}</text></view>
             <image class="wea_pic" src="../../icons/weather_icons/{{item.wea_copy[0]}}.png" />
         </view>
     </view>

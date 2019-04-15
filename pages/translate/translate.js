@@ -14,7 +14,8 @@ Page({
     let that=this;
     that.setData({
       s_words:e.detail.value
-    })
+    });
+    console.log('Input:'+that.data.s_words)
   },
 
   startTrans:function(e){

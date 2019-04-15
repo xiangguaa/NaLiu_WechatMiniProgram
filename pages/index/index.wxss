@@ -45,7 +45,13 @@ page{
 
 .t1{
   font-size: 35rpx;
-
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all; 
+  margin-right: 60rpx;
 
 }
 
@@ -75,7 +81,7 @@ page{
 .nav{
   display: flex;
   width: 45%;
-  height: 180rpx;
+  height: 190rpx;
   border-radius: 5rpx;
   text-align: center;
   align-items: center;
@@ -124,7 +130,7 @@ page{
 .long_nav{
   display: flex;
   width: 95%;
-  height: 180rpx;
+  height: 190rpx;
   border-radius: 5rpx;
   text-align: center;
   align-items: center;
@@ -135,10 +141,10 @@ page{
 }
 
 #wea{background-color: #C3E6E2;}
-#tsl{background-color: rgb(197, 222, 238);}
+#tsl{background-color: #C3E6DA;}
 #trn{background-color: #C8E6C3;}
 #fin{background-color: #F2DBAF;}
 #new{background-color: #E6C3C3;}
-#del{background-color: #C3E6DA;}
+#del{background-color: #C5C3E6;}
 #rec{background-color: #F6F6F6;}
 #his{background-color: #C5C3E6;}

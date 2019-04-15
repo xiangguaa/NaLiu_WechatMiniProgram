@@ -10,3 +10,6 @@ update02:
 
 upader03:
 重新设计index界面
+
+update04:
+完成所有页面的重新设计

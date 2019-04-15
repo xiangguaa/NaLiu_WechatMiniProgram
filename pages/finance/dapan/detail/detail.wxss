@@ -1,0 +1,37 @@
+page{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    margin: 4%;
+    border-style: solid;
+    border-width: 3rpx;
+    box-shadow: 5rpx 2rpx 4rpx 3rp;
+    border-radius: 15rpx;
+    padding: 3%;
+    
+}
+
+
+.title{
+    font-size: 60rpx;
+}
+.code{
+    font-size: 25rpx;
+    margin-left: 40rpx;
+}
+.detail_wrp{
+    margin: 20rpx;
+}
+.detail{
+    line-height: 80rpx;
+}
+
+.suggest{
+    height: 2%;
+    margin-left: 378rpx;
+    color: #b7b7b7;
+    font-size: 30rpx;
+}
+

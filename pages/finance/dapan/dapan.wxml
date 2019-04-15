@@ -1,22 +1,29 @@
 <view class="wrp">
     <view class="title">大盘指数行情</view>
-    <view class="detail_wrp">
-        <view class="detail" wx:for="{{dapan}}" wx:key="index">
-            <text>指数名称：{{dapan[index].name}} 
-            指数代码：{{dapan[index].code}}  
-            成交金额（元）：{{dapan[index].amount}}   
-            涨跌幅：{{dapan[index].change}}   
-            收盘点位：{{dapan[index].close}}    
-            日期：{{dapan[index].date}}   
-            最高点位：{{dapan[index].high}}   
-            最低点位：{{dapan[index].low}}                 
-            开盘点位：{{dapan[index].open}}   
-            昨日收盘点位：{{dapan[index].pre_close}}   
-            时间：{{dapan[index].time}}   
-            成交量（手）：{{dapan[index].volume}}   
-            </text>
-            
-        </view>
+
+    <view class="detail" wx:for="{{dapan}}" wx:key="{{index}}">
+        <navigator class="nav" url="detail/detail?name={{dapan[index].name}}&code={{dapan[index].code}}&amount={{dapan[index].amount}}&change={{dapan[index].change}}&close={{dapan[index].close}}&date={{dapan[index].date}}&high={{dapan[index].high}}&low={{dapan[index].low}}&open={{dapan[index].open}}&time={{dapan[index].time}}&pre_close={{dapan[index].pre_close}}&volume={{dapan[index].volume}}">
+            <view class="info">
+                <text class="nav_title">{{dapan[index].name}} </text>
+                <text class="nav_no">{{dapan[index].code}}</text>
+            </view>
+            <view class="nav_detail">详情查看</view>
+        </navigator>
+        <!-- <text>指数名称：{{dapan[index].name}} 
+        指数代码：{{dapan[index].code}}  
+        成交金额（元）：{{dapan[index].amount}}   
+        涨跌幅：{{dapan[index].change}}   
+        收盘点位：{{dapan[index].close}}    
+        日期：{{dapan[index].date}}   
+        最高点位：{{dapan[index].high}}   
+        最低点位：{{dapan[index].low}}                 
+        开盘点位：{{dapan[index].open}}   
+        昨日收盘点位：{{dapan[index].pre_close}}   
+        时间：{{dapan[index].time}}   
+        成交量（手）：{{dapan[index].volume}}   
+        </text> -->
+        
     </view>
+
     
 </view>

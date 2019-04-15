@@ -31,14 +31,16 @@
     </navigator>
 
 
-    <navigator id='tsl' url="../translate/translate"class="nav">
-      <image class="img" src="../../icons/index_icons/wea.png" />
-      <text class="text2">翻译</text>
-    </navigator>
-
     <navigator id='new' url="../news/news"class="nav">
       <image class="img" src="../../icons/index_icons/new.png" />
-      <text class="text1">热闻</text>
+      <text class="text1">简讯</text>
+    </navigator>
+    
+    
+
+    <navigator id='fin' url="../finance/finance"class="nav">
+      <image class="img" src="../../icons/index_icons/finas.png" />
+      <text class="text2">金融</text>
     </navigator>
 
 
@@ -47,15 +49,15 @@
       <text class="text3">今日食谱</text>
     </navigator>
 
-    <navigator id='fin' url="../finance/finance"class="nav">
-      <image class="img" src="../../icons/index_icons/finas.png" />
-      <text class="text1">金融</text>
-    </navigator>
     
+    <navigator id='tsl' url="../translate/translate"class="nav">
+      <!-- <image class="img" src="../../icons/index_icons/wea.png" /> -->
+      <text class="text1">翻译</text>
+    </navigator>
       
 
     <navigator id='del' url="../delivery/delivery"class="nav">
-      <image class="img" src="../../icons/index_icons/wea.png" />
+      <!-- <image class="img" src="../../icons/index_icons/wea.png" /> -->
       <text class="text2">快递</text>
     </navigator>
    

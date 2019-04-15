@@ -1,54 +1,72 @@
-const jinrishici = require('../../utils/jinrishici.js')
+// pages/finance/dapan/detail/detail.js
 Page({
-  
+
   /**
    * 页面的初始数据
    */
   data: {
-    onePoem:[]
-    
+    name:'',
+    code:'',
+    amount:'',
+    change:'',
+    close:'',
+    date:'',
+    high:'',
+    low:'',
+    open:'',
+    pre_close:'',
+    time:'',
+    volume:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    jinrishici.load(result => {
-      console.log(result)
-      this.setData({onePoem: result});
-      console.log(this.data.onePoem.data.content);
-    });
-    
-    
-    
+    console.log(options.date)
+    this.setData({
+      name:options.name,
+      code:options.code,
+      amount:options.amount,
+      change:options.change,
+      close:options.close,
+      date:options.date,
+      high:options.high,
+      low:options.low,
+      open:options.open,
+      pre_close:options.pre_close,
+      time:options.time,
+      volume:options.volume
+    })
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+
   },
 
   /**
@@ -56,27 +74,19 @@ Page({
    */
   onPullDownRefresh: function () {
 
-    jinrishici.load(result => {
-      console.log(result)
-      this.setData({onePoem: result});
-      console.log(this.data.onePoem.data.content);
-    });
-    console.log("更新诗词");
-    for(var t = Date.now();Date.now() - t <= 300;);
-    wx.stopPullDownRefresh();
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    
+
   }
 })
