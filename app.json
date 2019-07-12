@@ -1,40 +1,31 @@
-  {
-  "pages":[
+{
+  "pages": [
     "pages/index/index",
     "pages/delivery/delivery",
-    
     "pages/news/news",
-    
     "pages/weather/weather",
-    
     "pages/recipe/recipe",
-    "pages/transport/transport",  
-    
+    "pages/transport/transport",
     "pages/finance/dapan/dapan",
     "pages/finance/finance",
     "pages/finance/dapan/detail/detail",
-               
     "pages/translate/translate",
-    "pages/history/history",   
-    
+    "pages/history/history",
     "pages/poem/poem",
-    
-    "pages/finance/stock/stock",   
+    "pages/finance/stock/stock",
     "pages/finance/stock_02/stock_02",
     "pages/finance/exchange/exchange"
-    
-      
   ],
-  
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f8f8f8",
     "navigationBarTitleText": "ASSIST",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
