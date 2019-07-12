@@ -1,8 +1,7 @@
 # wx app
 
 final：
-
-![ZW8zvR.jpg](https://s2.ax1x.com/2019/07/12/ZW8zvR.jpg)
+[![ZW8zvR.md.jpg](https://s2.ax1x.com/2019/07/12/ZW8zvR.md.jpg)](https://imgchr.com/i/ZW8zvR)
 
 
 
