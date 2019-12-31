@@ -3,7 +3,7 @@
 使用纯前端设计的小程序，练手用
 
 final：
-[![ZW8zvR.md.jpg](https://s2.ax1x.com/2019/07/12/ZW8zvR.md.jpg)](https://imgchr.com/i/ZW8zvR)
+![l10JZ6.png](https://s2.ax1x.com/2019/12/31/l10JZ6.png)
 
 
 
