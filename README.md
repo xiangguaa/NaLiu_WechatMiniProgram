@@ -1,8 +1,9 @@
-# wx app
+# wx mini program
 微信小程序纳流 
-使用纯前端设计的小程序，练手用
+使用纯前端设计的小程序
 
 final：
+
 ![l1B9w6.png](https://s2.ax1x.com/2019/12/31/l1B9w6.png)
 
 
