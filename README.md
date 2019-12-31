@@ -3,9 +3,7 @@
 使用纯前端设计的小程序，练手用
 
 final：
-![l10JZ6.png](https://s2.ax1x.com/2019/12/31/l10JZ6.png)
-
-
+![l1B9w6.png](https://s2.ax1x.com/2019/12/31/l1B9w6.png)
 
 
 
