@@ -1,4 +1,4 @@
-
+// 通用模板，用于每个页面的动态加载显示
 
 let setNavBar = (time,title) =>{
     let that=this;

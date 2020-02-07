@@ -31,6 +31,7 @@ Page({
       }
     })
   },
+  // 删除之前所有的输入内容
   get_cancel(e){
     console.log(e)
     let that=this;

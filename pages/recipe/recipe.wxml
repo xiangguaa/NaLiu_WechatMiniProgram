@@ -1,13 +1,15 @@
 <view class="main">
-    <!-- <view class="title"><text >今日食谱</text></view> -->
+    <!-- 该view获取用户输入数据 -->
     <view class="input_wrp">
         <input placeholder-class="input-placeholder" value="{{i_value}}" placeholder="请输入要查询的食材信息" bindconfirm="getRecipe" class="input" />
         <image class="cancel_img" bind:tap="get_cancel" src="../../icons/other_icons/delete.png" />
     </view>
+    <!-- 下列两view显示初始界面的养生建议 -->
     <text class="suggest_title" wx:if="{{isshow_suggest}}">养生建议</text>
     <view class="suggest" wx:for="{{suggest}}" wx:key="{{index}}" wx:if="{{isshow_suggest}}">
         <text >{{item}}</text>
     </view>
+    <!-- 该view显示用户查询到的食谱信息 -->
     <view class="detial_wrp"  wx:if="{{isshow_detail}}">
         <view class="unit" wx:for="{{recipe}}" wx:key="{{index}}">
             <view class="name" wx:if="{{!isshow[index]}}">
@@ -21,7 +23,6 @@
                 <image class="arrow"  id="{{index}}" src="../../icons/other_icons/close.png" bind:tap="getClose" wx:if="{{isshow[index]}}"/>
             </view>
             <view class="detial" wx:if="{{isshow[index]}}">
-                <!-- <text class="content" >{{item.content}}</text> -->
                 <view class="material_wrp">
                     <view class="material" wx:for="{{item.material}}" wx:key="{{index}}">
                         {{item.mname}}:{{item.amount}}

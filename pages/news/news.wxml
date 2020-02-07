@@ -1,3 +1,4 @@
+<!-- 由于非企业版无法使用webview，因此新闻只显示了标题，即简讯 -->
 <view class="main">
     <view class="title"><text >简讯</text></view>
     <view class="wrp" wx:for="{{news_list}}" wx:key="{{index}}">
@@ -5,6 +6,4 @@
             {{item.title}}
          </view>
     </view>
-    
-
 </view>

@@ -33,6 +33,7 @@ Page({
                     that.setData({
                       weather: res.data.result.future
                     });
+                    // 将获取到的中文天气信息赋予对应的字母代码，便于不同的天气图片显示
                     for(let i=0;i<that.data.weather.length;i++){
                       let tmp=String(that.data.weather[i].weather);
                       let rel=tmp.replace(/多云/g,'a').replace(/晴/g,'b').replace(/小雨/g,'c').replace(/阵雨/g,'d').replace(/阴/g,'e');

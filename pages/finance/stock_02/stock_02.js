@@ -8,20 +8,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    showorhide:true,
-    code:null,
-    input_value:"",
-    fund_search:[], 
-    fund_random_new:null,
-    fund_new:[],
-    isshow:true,
-    messgn:''
+    showorhide:true,    // 控制显示随机股票列表或用户查询股票
+    code:null,    // 用户输入股票代码
+    input_value:"",   // 用户输入代码
+    fund_search:[],     //  用户查询的股票信息
+    fund_random_new:null,   // 上级页面随机推送的股票
+    fund_new:[],    // 从上级页面获取的预先接收到的全部股票列表
+    isshow:true,    // 控制是否显示股票信息未完成加载信息
+    messgn:''   // 数据未加载成功时的提示信息
   },
 
-
+  // 一键删除之前的所有输入
   getClear(e){
     let that=this;
-  
     that.setData({  
       code:null,
       fund_search:[],
@@ -30,6 +29,7 @@ Page({
     });
   },
 
+  // 获取并查询用户输入股票代码
   getCode:function(e){
     let that=this;
     that.setData({
@@ -42,6 +42,7 @@ Page({
       });
     }
 
+    // 遍历查询用户输入的股票代码
     for(let x=1;x<=3600;x++){
       if(e.detail.value==that.data.fund_new[x].code){
         that.setData({

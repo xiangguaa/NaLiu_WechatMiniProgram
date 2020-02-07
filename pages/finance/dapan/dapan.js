@@ -24,13 +24,13 @@ Page({
           that.setData({
             dapan:res.data.data
           });
-          // console.log(that.data.dapan)
         }
+
+        // 将企业代码以标准的8位数形式显示，包含前面的0
         var dapan_copy = that.data.dapan;
         for (var i = 0;i < dapan_copy.length;i++){
           if(dapan_copy[i].code.length!=8){
             dapan_copy[i].code = String(dapan_copy[i].code).substring(1,9)
-            // console.log(dapan_copy[i].code)
           }
         }
         that.setData({dapan:dapan_copy});

@@ -6,7 +6,7 @@
         <view class="pic_wrp" bindtap="getClear" ><image class="pic" src="../../../icons/other_icons/delete.png" /></view>
     </view>
     <view class="detail_wrp">
-        <!-- <view wx:for="{{fund_ramdom}}">{{index}}???????????/</view> -->
+        <!-- 该view显示系统推送的随机股票 -->
         <view class="detail" wx:for="{{fund_random_new}}" wx:key="{{index}}" wx:if="{{showorhide&&isshow}}" >
             <view class="stock_name"><text >{{item.name}}</text></view>
             <text >股票代码：{{item.code}}
@@ -24,6 +24,7 @@
                 成交量：{{item.volume}}
             </text>
         </view>
+        <!-- 该view显示用户查询的股票信息 -->
         <view class="search_detail" wx:if="{{!(showorhide)}}">
             <view class="stock_name"><text >{{item.name}}</text></view>
             <text >股票代码：{{fund_search.code}}
@@ -41,6 +42,7 @@
                 成交量：{{fund_search.volume}}
             </text>           
         </view>
+        <!-- 该view显示系统推送的随机股票未完成加载时的提示信息 -->
         <view class="error_view" wx:if="{{!isshow}}"><text >{{messgn}}</text></view>
     </view>
 </view>

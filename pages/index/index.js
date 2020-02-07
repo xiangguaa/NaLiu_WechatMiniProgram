@@ -1,3 +1,4 @@
+// 今日诗词SDK调用
 const jinrishici = require('../../utils/jinrishici.js')
 Page({
   
@@ -14,7 +15,6 @@ Page({
    */
   onLoad: function (options) {
     jinrishici.load(result => {
-      console.log(result)
       this.setData({onePoem: result});
       console.log(this.data.onePoem.data.content);
     });
@@ -55,7 +55,6 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
     jinrishici.load(result => {
       console.log(result)
       this.setData({onePoem: result});

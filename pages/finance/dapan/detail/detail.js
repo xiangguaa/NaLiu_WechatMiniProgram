@@ -25,21 +25,21 @@ Page({
   onLoad: function (options) {
     console.log(options.date)
     this.setData({
-      name:options.name,
-      code:options.code,
-      amount:options.amount,
-      change:options.change,
-      close:options.close,
-      date:options.date,
-      high:options.high,
-      low:options.low,
-      open:options.open,
-      pre_close:options.pre_close,
-      time:options.time,
-      volume:options.volume
+      name:options.name,    // 企业名称
+      code:options.code,    // 企业代码
+      amount:options.amount,    // 成交金额
+      change:options.change,    // 涨跌幅
+      close:options.close,    // 收盘点位
+      date:options.date,    // 日期
+      high:options.high,    // 最高点
+      low:options.low,    // 最低点
+      open:options.open,    // 开盘点
+      pre_close:options.pre_close,    // 昨日收盘点
+      time:options.time,    // 时间
+      volume:options.volume   // 成交量
     })
 
-  },
+  }, 
 
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -5,6 +5,7 @@
     <view class="tape"></view>
   </view>
   
+  <!-- 顶部诗词组件，下拉刷新 -->
   <navigator class="poem" url="../poem/poem?title={{onePoem.data.origin.title}}&author={{onePoem.data.origin.author}}&content={{onePoem.data.origin.content}}">
     <image class="poem_img" src="../../icons/index_icons/poem_bac.jpg" />
     
@@ -17,7 +18,7 @@
   </navigator>
 </view>
 
-
+  <!-- 功能界面：天气、交通、简讯、金融、食谱、翻译、快递 -->
   <view class="main_content">
     
     <navigator id='wea' url="../weather/weather"class="nav">
@@ -51,18 +52,16 @@
 
     
     <navigator id='tsl' url="../translate/translate"class="nav">
-      <!-- <image class="img" src="../../icons/index_icons/wea.png" /> -->
       <text class="text1">翻译</text>
     </navigator>
       
 
     <navigator id='del' url="../delivery/delivery"class="nav">
-      <!-- <image class="img" src="../../icons/index_icons/wea.png" /> -->
       <text class="text2">快递</text>
     </navigator>
    
     
-
+    <!-- 暂时弃用的功能 -->
     <navigator id='his' url="../history/history" class="long_nav" wx:if="{{false}}">
       <image class="img3" src="../../icons/index_icons/wea.png" />
       <text class="text3">历史上的今天</text>

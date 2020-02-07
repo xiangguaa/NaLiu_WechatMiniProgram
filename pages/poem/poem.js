@@ -9,7 +9,7 @@ Page({
     p_title:null,
     p_author:null,
     p_content:[],
-    p_content_real:[]
+    p_content_revised:[]
 
   },
 
@@ -18,13 +18,11 @@ Page({
     let that=this;  
     console.log(that.data.p_content.length);
     var tmp=that.data.p_content;
+    // 修正部分诗词标点显示错误
     var ke = tmp.replace(/。,/g, '。\n').replace(/！,/g, '。\n').replace(/？,/g, '。\n').replace(/。/g,'。\n')
-    // .replace(/。/g, '。\n').replace(/？/g, '。\n').replace(/！/g, '。\n');
-        console.log(ke);
     that.setData({
-      p_content_real:ke
+      p_content_revised:ke
     });
-    // console.log(that.data.p_content_real+'nsjfal');
       
     
   },

@@ -11,7 +11,6 @@
         <text >点击翻译</text>
     </view>
     
-
     <!-- 下界面 -->
     <view id="down" class="pad" >
         <view class="d_words"><text >{{d_words}}</text></view>
