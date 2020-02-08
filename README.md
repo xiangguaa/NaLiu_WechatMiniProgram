@@ -1,6 +1,6 @@
-# 纳流wx mini program-纯前端设计的小程序。
+## 纳流wx mini program-纯前端设计的小程序。
 
-部分界面展示：
+部分界面展示：</br>
 ![l1B9w6.png](https://s2.ax1x.com/2019/12/31/l1B9w6.png)
 
 
